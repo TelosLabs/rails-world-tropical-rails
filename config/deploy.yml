@@ -2,7 +2,7 @@
 service: rails-world
 
 # Name of the container image.
-image: sergeaf/rails-world
+image: sergeaf/rails-world-tropical-rails
 
 # To persist sqlite data, we need to mount a volume.
 volumes:
