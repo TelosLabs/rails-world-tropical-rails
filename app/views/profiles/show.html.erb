@@ -1,11 +1,11 @@
 <% profile_name = @profile.name.presence || "Anonymous" %>
-<%= title "#{profile_name}'s Profile - #{Current.conference&.name}" %>
+<%= title "Profile" %>
 
 <% content_for :top_nav do %>
   <%= render partial: "layouts/primary_top_nav" %>
 <% end %>
 
-<div class="relative flex flex-col h-full items-center justify-between flex-1 bg-grey-50 pt-safe-area-header pb-safe-area-bottom-navbar">
+<div class="relative flex flex-col items-center justify-between flex-1 h-full bg-grey-50 pt-safe-area-header pb-safe-area-bottom-navbar">
   <div class="flex flex-col items-center bg-cover bg-bottom bg-no-repeat max-h-[430px] w-full" style="background-image: url(<%= asset_path 'background_design.svg' %>)">
     <div class="z-10 flex flex-col items-start w-full max-w-screen-sm px-5 pt-6 pb-12">
       <div class="flex flex-row items-center">
