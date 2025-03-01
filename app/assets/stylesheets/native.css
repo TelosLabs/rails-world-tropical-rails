@@ -14,4 +14,7 @@
   padding-top: calc(env(safe-area-inset-top)) !important;
 }
 
-
+[data-bridge-components~="button"]
+[data-controller~="bridge-component"] {
+  display: none;
+}
