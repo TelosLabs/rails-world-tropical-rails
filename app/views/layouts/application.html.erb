@@ -51,7 +51,7 @@
       </div>
 
       <% if user_signed_in? %>
-        <%= link_to profile_path(current_profile&.uuid), data: { controller: "bridge-component", bridge_title: "Profile" } do %>
+        <%= link_to profile_path(current_profile&.uuid), class: "hidden", data: { controller: "bridge-component", bridge_title: "Profile" } do %>
           View profile
         <% end %>
       <% end %>
