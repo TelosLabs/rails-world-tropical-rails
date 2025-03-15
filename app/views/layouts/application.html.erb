@@ -20,6 +20,9 @@
 
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <% if turbo_native_app? %>
+      <%= stylesheet_link_tag "native", "data-turbo-track": "reload" %>
+    <% end %>
 
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.8.2/dist/es-module-shims.js" data-turbo-track="reload"></script>
 
@@ -46,6 +49,12 @@
           <% end %>
         <% end %>
       </div>
+
+      <% if user_signed_in? %>
+        <%= link_to profile_path(current_profile&.uuid), class: "hidden", data: { controller: "bridge-component", bridge_title: "Profile" } do %>
+          View profile
+        <% end %>
+      <% end %>
 
       <%= yield %>
     </main>

@@ -34,4 +34,9 @@ Rails.application.routes.draw do
   resources :profiles, only: [:show, :edit, :update], param: :uuid
   resources :notifications, only: [:index]
   resources :web_push_subscriptions, only: [:create]
+
+  resources :configurations, only: [] do
+    get :ios_v1, on: :collection
+    get :android_v1, on: :collection
+  end
 end
