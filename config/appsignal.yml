@@ -1,8 +1,9 @@
 default: &defaults
+  # Your push api key, it is possible to set this dynamically using ERB:
   push_api_key: "<%= ENV['APPSIGNAL_PUSH_API_KEY'] %>"
 
   # Your app's name
-  name: "RailsWorld"
+  name: "RailsWorld: Tropical Rails 2025"
 
   # Actions that should not be monitored by AppSignal
   # ignore_actions:
@@ -33,10 +34,10 @@ development:
   <<: *defaults
   active: false
 
-staging:
+production:
   <<: *defaults
   active: true
 
-production:
+staging:
   <<: *defaults
   active: true
