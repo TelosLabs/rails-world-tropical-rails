@@ -1,5 +1,5 @@
 # Name of your application. Used to uniquely configure containers.
-service: rails-world
+service: tropical-rails
 
 # Name of the container image.
 image: sergeaf/rails-world-tropical-rails
