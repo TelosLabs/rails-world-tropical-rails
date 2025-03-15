@@ -1,4 +1,4 @@
-# Rails World Conference App
+# Tropical Rails 2025 Conference App
 
 Rails application that allows you to create and manage conferences. You can use it to create a conference, add speakers and sessions. Attendees can register for the conference, view the schedule, receive notifications and more.
 

@@ -1,8 +1,8 @@
 # Name of your application. Used to uniquely configure containers.
-service: rails-world
+service: tropical-rails
 
 # Name of the container image.
-image: sergeaf/rails-world
+image: sergeaf/rails-world-tropical-rails
 
 # To persist sqlite data, we need to mount a volume.
 volumes:
