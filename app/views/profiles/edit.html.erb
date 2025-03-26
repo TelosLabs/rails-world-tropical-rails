@@ -15,7 +15,7 @@
     <h1 class="w-full mb-6 text-3xl font-black text-white">Set up your account</h1>
 
     <%= form_with model: @profile, url: profile_path(@profile.uuid), class: "flex flex-col items-center" do |form| %>
-      <div class="relative" data-controller="image-previewer">
+      <div class="relative d-hotwire-native-none" data-controller="image-previewer">
         <%= form.label(
           :image,
           class: "overflow-hidden relative font-bold text-white text-base w-32 h-32 bg-white
