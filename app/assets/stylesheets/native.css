@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+.d-hotwire-native-inline {
+  display: inline !important;
+}
+
 .top-safe-area-no-filters {
   top: calc(env(safe-area-inset-top) + 177px) !important;
 }
