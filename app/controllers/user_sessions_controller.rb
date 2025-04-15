@@ -15,7 +15,7 @@ class UserSessionsController < ApplicationController
 
     if @user
       login @user
-      redirect_to after_sign_in_path
+      redirect_to after_sign_in_path, data: {turbo_action: "clear_all"}
     else
       redirect_to new_user_session_path, alert: t("controllers.user_sessions.create.alert")
     end

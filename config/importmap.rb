@@ -11,3 +11,4 @@ pin_all_from "app/javascript/custom", under: "custom"
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
 pin "@stimulus-components/password-visibility", to: "@stimulus-components--password-visibility.js" # @3.0.0
+pin "@hotwired/hotwire-native-bridge", to: "@hotwired--hotwire-native-bridge.js" # @1.0.0

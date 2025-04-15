@@ -1,6 +1,6 @@
-# Tropical Rails 2025 Conference App
+# Tropical On Rails 2025 Conference App
 
-Rails application that allows you to create and manage conferences. You can use it to create a conference, add speakers and sessions. Attendees can register for the conference, view the schedule, receive notifications and more.
+Allow users to view the conference's schedule and speakers, favorite sessions, and receive notifications.
 
 ## Installation
 
@@ -12,15 +12,25 @@ Rails application that allows you to create and manage conferences. You can use 
 4. Run `bin/dev`
 5. Visit `http://localhost:3000` in your browser
 
-## The stack
+## Tech Stack
 
-- Ruby on Rails 7.2.x
-- Ruby 3.3.x
-- SQLite3
-- SolidQueue
-- Hotwire
-- Import maps
-- Tailwind CSS
+- **Framework**: Ruby on Rails 7.2.2
+- **Language**: Ruby 3.3.3
+- **Database**: SQLite3
+- **Background jobs**: SolidQueue
+- **Frontend architecture**: Hotwire
+- **JavaScript bundling**: Import maps
+- **Asset handling**: Propshaft
+- **CSS framework**: Tailwind CSS
+- **Authentication**: In-house
+- **Authorization**: ActionPolicy
+- **Admin panel**: Avo
+- **Web server**: Puma
+- **Deployments**: Kamal
+- **Server**: Vultr (VPS)
+- **Performance monitoring**: AppSignal
+- **Email delivery**: MailPace
+- **File storage**: Amazon S3 via ActiveStorage
 
 ## Usage
 

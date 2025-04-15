@@ -4,6 +4,10 @@ servers:
 
 # Inject ENV variables into containers (secrets come from .env).
 # Remember to run `kamal env push` after making changes!
+
+ssh:
+  user: root
+
 env:
   clear:
     RAILS_ENV: staging
